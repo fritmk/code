@@ -3,7 +3,7 @@ package com.fritmk.strings;
 import java.util.Scanner;
 
 
-public class bj_11720 {
+public class BJ_11720 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

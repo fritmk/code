@@ -13,10 +13,10 @@
 9. Greedy
 
 
-1. https://covenant.tistory.com/224#google_vignette
-2. https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit
-3. https://codingdodo.tistory.com/38
-4. https://codingdodo.tistory.com/94
+- https://covenant.tistory.com/224#google_vignette
+- https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit
+- https://codingdodo.tistory.com/38
+- https://codingdodo.tistory.com/94
 
 
 ### December 2024

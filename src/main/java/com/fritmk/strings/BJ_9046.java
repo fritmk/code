@@ -7,48 +7,38 @@ public class BJ_9046 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        sc.nextLine();
+        int n = Integer.parseInt(sc.nextLine());
 
-        String a = "abcdefghijklmnopqrstuvwxyz";
-        int num = a.split("").length;
         int[] list;
 
-        while(n > 0) {
-            n--;
-            list = new int[num];
+        for(int i = 0; i < n; i++) {
 
-            String str = sc.nextLine().toLowerCase();
+            list = new int[26];
+            String str = sc.nextLine();
+            str = str.replaceAll(" ", "");
 
-            for(int i = 0; i < str.length(); i++) {
-                if(str.charAt(i) == ' ') {
-                    continue;
-                }
-                int index = str.charAt(i) - 'a';
-//                System.out.println(str.charAt(i));
-                list[index] = list[index] + 1;
+            for(int j = 0; j < str.length(); j++) {
+                list[str.charAt(j) - 'a']++;
             }
 
-            int nowMax = Integer.MIN_VALUE;
-            int preMax = Integer.MIN_VALUE;
-            int resultIndex = -1;
+            int beforeMax = list[0];
+            int max = list[0];
+            int idx = 0;
 
-            for(int i = 0; i< list.length; i++) {
-                if(list[i] >= nowMax) {
-                    preMax = nowMax;
-                    nowMax = list[i];
-                    resultIndex = i;
+            for(int j = 1; j < list.length; j++) {
+                if(list[j] >= max) {
+                    beforeMax = max;
+                    max = list[j];
+                    idx = j;
                 }
             }
 
-            if(nowMax != preMax) {
-                System.out.println((char) (resultIndex + 'a'));
-            } else {
+            if(max == beforeMax) {
                 System.out.println("?");
+            } else {
+                System.out.println((char)(idx + 'a'));
             }
-
         }
-
 
     }
 }

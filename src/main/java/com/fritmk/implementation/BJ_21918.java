@@ -16,6 +16,7 @@ public class BJ_21918 {
         int m = Integer.parseInt(temp.split(" ")[1]);
 
 
+
         temp = sc.nextLine();
 
         String[] list = temp.split(" ");

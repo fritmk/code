@@ -1,4 +1,4 @@
-package com.fritmk.programmers;
+package com.fritmk.programmers.graph;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

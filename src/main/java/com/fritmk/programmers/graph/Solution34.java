@@ -1,4 +1,4 @@
-package com.fritmk.programmers;
+package com.fritmk.programmers.graph;
 
 import java.util.ArrayList;
 /**
@@ -10,7 +10,14 @@ public class Solution34 {
     private static ArrayList<Integer>[] adjList;
     private static ArrayList<Integer> answer;
 
-    public int[] solution(int[][] graph, int start, int n) {
+
+    public static void main(String[] args) {
+        for(int a : Solution34.solution(new int[][]{ {1,3}, {2,3}, {3,4}, {4,5}}, 1, 5)) {
+            System.out.println(a);
+        }
+    }
+
+    public static  int[] solution(int[][] graph, int start, int n) {
 
 
         adjList = new ArrayList[n+1];
